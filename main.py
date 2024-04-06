@@ -39,7 +39,7 @@ class ChatGPTBot:
         message_history.append(request)
 
         # Create a chat completion object using OpenAI API
-        completion = openai.ChatCompletion.create(
+        completion = openai.chat.completions.create(
           model = model,
           messages = message_history
         )  # other useful parameters: temperature and max_tokens
