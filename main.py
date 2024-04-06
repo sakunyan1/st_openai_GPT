@@ -274,17 +274,6 @@ class ChatApp:
             st.error('Please enter your API key to initiate your chat!')
 
 
-        # Desktop App for downloading
-        st.text('')
-        col1, col2 = st.columns([14, 7.3])
-        desktop_binary_file = 'assets/OpenAI-API-Desktop-ChatBot.exe'
-        with open(desktop_binary_file, 'rb') as file:
-            # Display a download button for the desktop version of the chatbot
-            col2.download_button(label = ':computer: Download Desktop Version',
-                                 data = file,
-                                 file_name = 'OpenAI-API-Desktop-ChatBot.exe',
-                                 mime = 'application/octet-stream',
-                                 help = 'It is recommended to install [Python](https://www.python.org/downloads/) on your local computer prior to running the desktop program.')
         st.text('')
 
 
