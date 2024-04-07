@@ -192,7 +192,8 @@ class ChatApp:
         # Set the page title
         st.title('Welcome to Chat with Voice')
         # Display a subheader that briefly describe the chatbot web app
-        st.subheader("Conversations with Impact: Your Interactive Chat Companion, Powered By OpenAI's GPT 3.5 Turbo Model and Whisper Model :robot_face:")
+        st.subheader("Conversations with Impact: Your Interactive Chat Companion :robot_face:")
+        st.markdown("***Powered By OpenAI's GPT 3.5 Turbo Model and Whisper Model***")
 
         # Get the API key from the user
         col1, col2 = st.columns([1, 1])
