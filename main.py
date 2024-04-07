@@ -1,8 +1,5 @@
 # Code refactored from https://github.com/MaxineXiong/OpenAI-API-Web-Apps/blob/master/pages/2_Talk_To_GPT3.5.py
 
-
-# Code refactored from https://github.com/MaxineXiong/OpenAI-API-Web-Apps/blob/master/pages/2_Talk_To_GPT3.5.py
-
 import streamlit as st
 from streamlit_chat import message
 import openai
@@ -193,9 +190,9 @@ class ChatApp:
     # Run the Chatbot application
     def run(self):
         # Set the page title
-        st.title('Welcome to Talk To GPT-3.5')
+        st.title('Welcome to Chat With Voice')
         # Display a subheader that briefly describe the chatbot web app
-        st.subheader("Emplowering Conversations: A ChatBot You Can Message Or Talk To, Powered By OpenAI's GPT 3.5 Turbo Model and Whisper Model :robot_face:")
+        st.subheader("Conversations with Impact: Your Interactive Chat Companion, Powered By OpenAI's GPT 3.5 Turbo Model and Whisper Model :robot_face:")
 
         # Get the API key from the user
         col1, col2 = st.columns([1, 1])
