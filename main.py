@@ -190,7 +190,7 @@ class ChatApp:
     # Run the Chatbot application
     def run(self):
         # Set the page title
-        st.title('Welcome to Chat With Voice')
+        st.title('Welcome to Chat with Voice')
         # Display a subheader that briefly describe the chatbot web app
         st.subheader("Conversations with Impact: Your Interactive Chat Companion, Powered By OpenAI's GPT 3.5 Turbo Model and Whisper Model :robot_face:")
 
