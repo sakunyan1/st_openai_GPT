@@ -194,7 +194,8 @@ class ChatApp:
         # Display a subheader that briefly describe the chatbot web app
         st.subheader("Conversations with Impact: Your Interactive Chat Companion :robot_face:")
         st.markdown("***Powered By OpenAI's GPT 3.5 Turbo Model and Whisper Model***")
-
+        st.write("")
+        
         # Get the API key from the user
         col1, col2 = st.columns([1, 1])
         KEY = col1.text_input("Please paste your API key and hit the 'Enter' key", type="password",
