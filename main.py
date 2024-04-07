@@ -1,5 +1,8 @@
 # Code refactored from https://github.com/MaxineXiong/OpenAI-API-Web-Apps/blob/master/pages/2_Talk_To_GPT3.5.py
 
+
+# Code refactored from https://github.com/MaxineXiong/OpenAI-API-Web-Apps/blob/master/pages/2_Talk_To_GPT3.5.py
+
 import streamlit as st
 from streamlit_chat import message
 import openai
@@ -39,13 +42,13 @@ class ChatGPTBot:
         message_history.append(request)
 
         # Create a chat completion object using OpenAI API
-        completion = openai.Completion.create(
+        completions = openai.ChatCompletion.create(
           model = model,
           messages = message_history
         )  # other useful parameters: temperature and max_tokens
 
         # Extract bot's message from the API response
-        bot_message = completion['choices'][0]['message']['content']
+        bot_message = completions['choices'][0]['message']['content']
         # Assemble a response using bot's message and append it to message_history
         response = {"role": 'assistant', "content": bot_message}
         message_history.append(response)
@@ -200,7 +203,7 @@ class ChatApp:
                                help = "To create and collect an API key, visit https://platform.openai.com/account/api-keys, \
                                click on 'API Key', then select 'Create new secret key' and click 'Copy'. \
                                Note: Please be mindful of the number of requests you've sent to GPT-3.5, \
-                               as exceeding the free credits limit of $18 may result in additional fees.\
+                               as exceeding the free credits limit may result in additional fees.\
                                To check your usage, visit the same website and click on 'Usage'.")
 
         # Mark down a breakline
