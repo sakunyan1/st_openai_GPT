@@ -129,7 +129,7 @@ class ChatApp:
         # Set page config
         st.set_page_config(page_title="Talk To GPT-3.5",
                            page_icon=":microphone:",
-                           layout='centered',
+                           layout='wide',
                            initial_sidebar_state="auto")
         # Remove all previously existing audio files
         for file in glob.glob('./*.wav'):
@@ -198,7 +198,7 @@ class ChatApp:
         
         # Get the API key from the user
         col1, col2 = st.columns([1, 1])
-        KEY = col1.text_input("Please paste your API key and hit the 'Enter' key", type="password",
+        KEY = st.sidebar("Please paste your API key and hit the 'Enter' key", type="password",
                                help = "To create and collect an API key, visit https://platform.openai.com/account/api-keys, \
                                click on 'API Key', then select 'Create new secret key' and click 'Copy'. \
                                Note: Please be mindful of the number of requests you've sent to GPT-3.5, \
