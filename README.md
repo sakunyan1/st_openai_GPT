@@ -12,6 +12,6 @@ Hosted on Streamlit for seamless accessibility, our app offers a user-friendly i
 
 ## To obtain your own OpenAI API key, simply follow these steps:
 
-Visit https://platform.openai.com/account/api-keys.
-Click on the + Create new secret key button.
-Then, provide an optional identifier name and hit Create secret key.
+1. Visit https://platform.openai.com/account/api-keys.
+2. Click on the `+ Create new secret key` button.
+3. Then, provide an optional identifier name and hit Create secret key.
